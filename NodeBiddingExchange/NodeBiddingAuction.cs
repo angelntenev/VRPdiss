@@ -24,6 +24,8 @@ namespace NodeBiddingExchange
         List<string> leastDistanceOfferedList = new List<string>();
         double leastDistanceOffered;
 
+        double distanceSaved = 0;
+        
         int numberOfAgents = 0;
 
         bool readyToStop = false;
@@ -32,10 +34,10 @@ namespace NodeBiddingExchange
         public override void Setup()
         {
             // Open the text file using a StreamReader
-            StreamReader reader = new StreamReader("C:\\Users\\Angel\\source\\repos\\VRPdiss\\DisplayNodes\\Customer nodes\\GeneratedRoute1.txt");
+            StreamReader reader = new StreamReader("C:\\Users\\Angel\\source\\repos\\VRPdiss\\DisplayNodes\\Customer nodes\\Routes for auction\\Route30.txt");
 
             // Declare an array of lists of type Point
-            List<Point>[] pointsArray = new List<Point>[300];
+            List<Point>[] pointsArray = new List<Point>[10];
 
             // Initialize each element to a new instance of List<Point>
             for (int i = 0; i < pointsArray.Length; i++)
@@ -268,6 +270,7 @@ namespace NodeBiddingExchange
                 }
 
                 Send("Environment", $"addSeller {maxDistance2 - maxDistance1}");
+                distanceSaved = maxDistance1 - maxDistance2;
                 Send(message.Sender, $"pointAccepted");
             }
         }
@@ -291,6 +294,7 @@ namespace NodeBiddingExchange
                 }
 
                 Send("Environment", $"addBuyer {maxDistance1 - maxDistance2}");
+                distanceSaved = maxDistance1 - maxDistance2;
                 SendToMany(agentsRequestingHelp, $"requesterOut");
             }
         }
