@@ -1,12 +1,4 @@
-﻿/*
- * Author: Simon Powers
- * An Environment Agent that sends information to a Household Agent
- * about that household's demand, generation, and prices to buy and sell
- * from the utility company, on that day. Responds whenever pinged
- * by a Household Agent with a "start" message.
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;

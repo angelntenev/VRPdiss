@@ -1,18 +1,8 @@
-Agent 1 has gained 64.44175479342994 km
+Agent 2 has gained 185.0225164339463 km
 
-Agent 3 has gained 122.89150694790806 km
+Agent 5 has saved 3.8762195811154925 km
 
-Agent 4 has gained 178.66865247741498 km
-Agent 4 has saved 1594.182760728212 km
+Agent 7 has saved 62.389145360783004 km
 
-Agent 5 has gained 0 km
-
-Agent 7 has saved 1209.688563309246 km
-
-Agent 8 has saved 1353.4652382310578 km
-
-Agent 9 has saved 641.4522386498975 km
-
-Agent 10 has gained 128.76554784037762 km
-Agent 10 has saved 837.649158461063 km
+Agent 10 has gained 59.36941740836755 km
 

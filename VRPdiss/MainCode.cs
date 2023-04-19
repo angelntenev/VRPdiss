@@ -19,16 +19,15 @@ namespace VRPdiss
 
                 // Define the parameters for the Genetic Algorithm
                 int populationSize = 100;
-                int numberOfGenerations = 1000;
-                double mutationRate = 0.3;
-                double crossoverRate = 0.50;
+                int numberOfGenerations = 10000;
+                double mutationRate = 0.7;
+                double crossoverRate = 0.05;
 
                 // Initialize the population
                 List<Route> population = GenerateInitialPopulation(populationSize, inputFilePath);
 
                 // Evaluate the fitness of each individual in the population
                 EvaluateFitness(population);
-                Console.WriteLine();
                 Route solution = GetBestIndividual(population);
 
                 // Loop through the number of generations

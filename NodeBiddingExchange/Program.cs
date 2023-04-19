@@ -1,19 +1,4 @@
-﻿/**************************************************************************
- *                                                                        *
- *  Description: Simple example of using the ActressMas framework         *
- *  Website:     https://github.com/florinleon/ActressMas                 *
- *  Copyright:   (c) 2018, Florin Leon                                    *
- *                                                                        *
- *  This program is free software; you can redistribute it and/or modify  *
- *  it under the terms of the GNU General Public License as published by  *
- *  the Free Software Foundation. This program is distributed in the      *
- *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
- *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
- *  PURPOSE. See the GNU General Public License for more details.         *
- *                                                                        *
- **************************************************************************/
-
-using ActressMas;
+﻿using ActressMas;
 using NodeBiddingExchange;
 using System;
 using System.Threading;

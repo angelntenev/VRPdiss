@@ -4,13 +4,10 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import tkinter as tk
 
 # get a list of all files in the directory
-directory = r'C:\Users\Angel\source\repos\VRPdiss\DisplayNodes\Customer nodes\Split Routes'
-files = [os.path.join(directory, f) for f in os.listdir(directory) if f.startswith('SeparatedRoute')]
+directory = r'C:\Users\Angel\source\repos\VRPdiss\DisplayNodes\Customer nodes\Solution to Routes'
+files = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith('.txt')]
 
-# sort the files by number
-files = sorted(files, key=lambda f: int(os.path.splitext(f)[0].split('SeparatedRoute')[1]))
-
-# define a function to handle button clicks
+# create a function to handle button clicks
 def on_button_click(direction):
     global i
     if direction == 'forward':
@@ -19,7 +16,7 @@ def on_button_click(direction):
         i = (i - 1) % len(files)
     plot_file(files[i])
 
-# define a function to plot a file
+# create a function to plot a file
 def plot_file(file):
     with open(file) as f:
         lines = f.readlines()
